@@ -1,0 +1,33 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#body-wrapper img {
+  position: fixed;
+  background-image: url("food.jpg");
+  height: 100%;
+  background-position: center;
+  background-size:auto;
+  z-index: -2;
+  opacity: 0.2;
+  left: 100px;
+  border-radius: 3px;
+}
+
+.bg-success {
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 3px;
+  border: 1px solid lightgrey;
+}
+
+#copyright {
+  text-align: center;
+  font-weight: bold;
+  top: 900px;
+  position: relative;
+  opacity: 0.6;
+}

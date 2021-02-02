@@ -1,0 +1,40 @@
+* {
+  /*border: 1px solid steelblue;*/
+  padding: 5px;
+  margin: 10px;
+}
+
+html {
+  height: auto;
+  width: auto;
+  margin: 0;
+}
+
+#body-wrapper {
+  position: relative;
+  padding: 10px;
+}
+
+#body-wrapper img {
+  position: fixed;
+  background-image: url("food.jpg");
+  height: 100%;
+  background-position: center;
+  background-size:auto;
+  z-index: -2;
+  opacity: 0.2;
+  left: 100px;
+  border-radius: 3px;
+}
+
+ul>li {
+  list-style-type: none;
+}
+
+#copyright {
+  text-align: center;
+  font-weight: bold;
+  top: 900px;
+  position: relative;
+  opacity: 0.6;
+}

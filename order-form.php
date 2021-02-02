@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/orderformstyles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Order Form</title>
+  </head>
+  <body>
+    <div id="body-wrapper">
+        <img id="food-image" src="images/food.jpg" alt="ingredients to make homemade pasta laid out on a table">
+    </div>
+    <div class="btn-group btn-group-justified">
+      <a href="menu.php" target="_blank" class="btn btn-primary">View Menu</a>
+      <a href="index.php" class="btn btn-primary">Home</a>
+    </div>
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form action="action-page.php">
+
+            <div class="row">
+              <div class="col-50">
+                <h3>Billing Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name </label>
+                  <input type="text" id="fname" name="firstname" placeholder="Joe Schmoe">
+                <label for="email"><i class="fa fa-envelope"></i> Email </label>
+                  <input type="text" id="email" name="email" placeholder="bobjimjoebob@example.com">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address </label>
+                  <input type="text" id="adr" name="address" placeholder="Your Address">
+                <label for="city"><i class="fa fa-institution"></i> City </label>
+                  <input type="text" id="city" name="city" placeholder="Your City">
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="State">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip" placeholder="Zip Code">
+                    </div>
+                  </div>
+              </div>
+                <div class="col-50">
+                  <h3>Payment</h3>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="Billy Bob">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="0000-0000-0000-0000">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="">
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="">
+                      </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="000">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+              <input id="checkout-btn" href="action-page.php" type="submit" value="Continue to checkout" class="btn">
+          </form>
+        </div>
+      </div>
+      <div class="col-25">
+        <div class="container">
+          <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i><b> #</b></span></h4>
+          <p><a href="#">Product 1</a> <span class="price">#</span></p>
+          <p><a href="#">Product 2</a> <span class="price">#</span></p>
+          <p><a href="#">Product 3</a> <span class="price">#</span></p>
+          <p><a href="#">Product 4</a> <span class="price">#</span></p>
+          <hr>
+          <p>Total <span class="price" style="color:black"><b>#</b></span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="orderform.js"></script>
+    <div id="copyright"><p>Cody Lemons <br> Copyright &#169; 2020</p></div>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+html {
+  height: auto;
+  width: auto;
+  margin: 0;
+}
+
+#pagetop-wrapper {
+  padding: 10px;
+}
+
+#pagetop>h1 {
+  font-size: 250%;
+  text-align: center;
+  padding: 20px;
+}
+
+#body-wrapper {
+  position: relative;
+  padding: 10px;
+}
+
+#body-wrapper img {
+  position: fixed;
+  background-image: url("food.jpg");
+  height: 100%;
+  background-position: center;
+  background-size:auto;
+  z-index: -2;
+  opacity: 0.2;
+  left: 100px;
+  border-radius: 3px;
+}
+
+#copyright {
+  text-align: center;
+  font-weight: bold;
+  top: 900px;
+  position: relative;
+  opacity: 0.6;
+}

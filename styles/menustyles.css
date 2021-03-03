@@ -1,7 +1,7 @@
 * {
-  /*border: 1px solid steelblue;*/
   padding: 5px;
   margin: 10px;
+  box-sizing: border-box;
 }
 
 html {
@@ -10,25 +10,80 @@ html {
   margin: 0;
 }
 
-#body-wrapper {
+.menu-items {
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-gap: 10px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.item {
+  background-color: rgb(219, 221, 214);
+  width: 300px;
+}
+
+.item > img {
+  height: 200px;
+  width: 93%;
+}
+
+#maincheck1,
+#maincheck2,
+#maincheck3,
+#maincheck4,
+#maincheck5,
+#maincheck6,
+#maincheck7,
+#maincheck8,
+#maincheck9 {
+  color: white;
+  letter-spacing: 0.1rem;
+  padding: 0;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  font-weight: bolder;
+  width: 100%;
   position: relative;
-  padding: 10px;
+  background-color: rgb(74, 100, 184);
 }
 
-#body-wrapper img {
-  position: fixed;
-  background-image: url("food.jpg");
-  height: 100%;
-  background-position: center;
-  background-size:auto;
-  z-index: -2;
-  opacity: 0.2;
-  left: 100px;
-  border-radius: 3px;
+.fa-shopping-cart {
+  font-size: 20px;
 }
 
-ul>li {
-  list-style-type: none;
+.fa-shopping-cart:hover {
+  color: rgb(88, 138, 88);
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.placeOrderBtn {
+  border-radius: 4px;
+  background-color: rgb(51, 122, 183);
+  color: white;
+}
+
+.clearfields {
+  border-radius: 4px;
+  position: absolute;
+  width: 100vw;
 }
 
 #copyright {
